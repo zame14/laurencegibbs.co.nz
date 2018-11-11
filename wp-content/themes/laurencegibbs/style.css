@@ -1,0 +1,847 @@
+/*
+ Theme Name:   Laurence Gibbs Photographer
+ Theme URI:    https://www.understrap.com
+ Description:  UnderStrap Child Theme
+ Author:       A-Z Web Solutions Ltd
+ Author URI:   http://www.azwebsolutions.co.nz
+ Template:     understrap
+ Version:      0.3.5
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  understrap-child
+ Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+ GitHub Theme URI: holger1411/understrap-child
+*/
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #666666;
+    margin: 0;
+}
+h1 {
+    font-family: 'Karla', sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #707070;
+    margin: 0;
+}
+h2 {
+    font-family: 'Karla', sans-serif;
+}
+h3 {
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+}
+a:hover, a:active, a:visited, a:focus{
+    text-decoration: none;
+}
+p {
+    margin-bottom: 10px;
+}
+ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+#header {
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 99;
+    border-bottom: 1px solid #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+}
+.navbar-brand img {
+    height: 100%;
+    width: auto;
+}
+#lg-menu-wrapper {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+    color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
+    color: #333333;
+}
+#mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu {
+    margin-top: -20px;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
+    font-size: 16px;
+}
+.logo-wrapper {
+    display: inline-block;
+}
+.home-cta {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.home-cta h2 {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #707070;
+    margin: 0;
+}
+.home-cta:first-child h2 {
+    margin-top: 100px;
+}
+#main img {
+    max-width: 100%;
+    height: auto;
+}
+.home .vc_row-has-fill + .vc_row-full-width + .vc_row > .vc_column_container > .vc_column-inner {
+    padding-top: 0;
+}
+.stories-wrapper {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+.story-tile {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+#full-width-banner-page .story-tile {
+    margin-bottom: 15px;
+}
+.story-tile a {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.story-tile .title {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 60%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-shadow: 1px 1px 0 #707070;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.home .wpb_content_element {
+    margin-bottom: 15px;
+}
+.intro-section p {
+    font-size: 24px;
+    line-height: 38px;
+    color: #000000;
+}
+.home h1 {
+    font-size: 24px;
+    line-height: 38px;
+    color: #000000;
+    font-weight: 700;
+    text-shadow: none;
+}
+.award-wrapper {
+    margin-top: 50px;
+}
+.award-wrapper img {
+    width: 300px;
+}
+#instagram-feed {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+.gallery-template-default #instagram-feed, .story-template-default #instagram-feed {
+    margin-top: 0;
+}
+#instagram-feed p.clear {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+    margin-bottom: 0;
+}
+#instagram-feed p.clear a {
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    text-transform: uppercase;
+    color: #666666;
+    font-size: 12px;
+}
+ul.instagram-pics {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul.instagram-pics li {
+    display: inline-block;
+    width: 12.5%;
+}
+ul.instagram-pics li a {
+    display: block;
+}
+ul.instagram-pics li a img {
+    width: 100%;
+}
+.nopadding {
+    padding: 0;
+}
+.inside-banner-wrapper {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+}
+.inside-banner-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    width: 100%;
+    height: auto;
+}
+.page-title h1 {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+.page-intro {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.page-intro p {
+    color: #000000;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+#gallery-category-wrapper .stories-wrapper {
+    margin-bottom: 100px;
+}
+.cta-wrapper {
+    display: flex;
+    flex-flow: row;
+    background-color: #282828;
+    text-align: center;
+    align-items: center;
+}
+.cta-wrapper .flex-item {
+    position: relative;
+}
+.cta-wrapper .flex-item:first-child {
+    flex: 1.5 0 0;
+}
+.cta-wrapper .flex-item:last-child {
+    flex: 2 0 0;
+}
+.cta-wrapper .content-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cta-wrapper .title {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+}
+.btn {
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+.btn-cta {
+    background-color: #cdaf97;
+    color: #ffffff;
+}
+.btn-cta:hover {
+    color: #ffffff;
+}
+.page-navigation-section {
+    margin-top: 50px;
+    height: 60px;
+    background-color: #e4e4e4;
+    position: relative;
+}
+.page-navigation-section a {
+    color: #666666;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.page-navigation-section a.next {
+    position: absolute;
+    right: 50px;
+}
+.page-navigation-section a.next:after {
+    content: "\f178";
+    font-family: FontAwesome;
+    margin-left: 5px;
+}
+
+.page-navigation-section a.previous {
+    position: absolute;
+    left: 50px;
+}
+.page-navigation-section a.previous:before {
+    content: "\f177";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+.page-navigation-section a.listing {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.page-navigation-section a.listing span {
+    font-size: 20px;
+}
+.testimonials-wrapper {
+    background-color: #282828;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.testimonials-wrapper p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+.story-images-wrapper {
+    margin-top: 40px;
+}
+.story-image {
+    margin-bottom: 5px;
+}
+.story-image img {
+    max-width: 100%;
+}
+.gallery-wrapper {
+    margin-bottom: 80px;
+}
+.gallery-wrapper .slick-slide {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+.gallery-wrapper i {
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+    z-index: 99;
+    cursor: pointer;
+
+}
+.gallery-wrapper i.fa-angle-left {
+    left: 20px;
+}
+.gallery-wrapper i.fa-angle-right {
+    right: 20px;
+}
+.page-intro .wpb_content_element {
+    margin-bottom: 0 !important;
+}
+.form-control {
+    border-radius: 0;
+}
+.btn-primary {
+    background-color: #666666;
+    border-color: #666666;
+    cursor: pointer;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:visited {
+    background-color: #333333;
+    border-color: #333333;
+}
+.wedding-package-wrapper, .engagement-package-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.wedding-package-wrapper .wpb_content_element, .engagement-package-wrapper .wpb_content_element {
+    margin-bottom: 0 !important;
+}
+.wedding-package-wrapper.grey {
+    background-color: #e4e4e4;
+}
+.wedding-package-wrapper .vc_column_container > .vc_column-inner, .engagement-package-wrapper .vc_column_container > .vc_column-inner {
+    padding: 0;
+}
+.wedding-package-wrapper .vc_column_container, .engagement-package-wrapper .vc_column_container {
+    background-color: #ffffff;
+    padding: 20px;
+}
+.wedding-package-wrapper .vc_column_container.grey {
+    background-color: #e4e4e4;
+}
+.wedding-package-wrapper .vc_column_container.image-wrapper, .engagement-package-wrapper .vc_column_container.image-wrapper {
+    border: 1px #666666 solid;
+    border-right-width: 0;
+}
+.wedding-package-wrapper .vc_column_container.package-wrapper, .engagement-package-wrapper .vc_column_container.package-wrapper {
+    border: 1px #666666 solid;
+    border-left-width: 0;
+}
+.wedding-package-wrapper h2, .engagement-package-wrapper h2 {
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px !important;
+}
+.package-wrapper ul {
+    margin-bottom: 30px;
+}
+.wedding-package-wrapper .vc_column_container.spacer {
+    background-color: #e4e4e4;
+}
+.engagement-package-wrapper .vc_column_container.image-wrapper {
+    background-color: #e4e4e4;
+}
+.engagement-package-wrapper .vc_column_container.package-wrapper {
+    background-color: #e4e4e4;
+}
+#footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#footer h3 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+#footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#footer ul li a {
+    color: #666666;
+}
+#footer ul.contacts li a, #footer ul.gallery-menu li a {
+    margin-left: 5px;
+}
+#footer ul.social-media li {
+    display: inline-block;
+}
+#footer ul.social-media li {
+    margin-right: 10px;
+}
+#footer ul.social-media li:last-child {
+    margin-right: 0;
+}
+#footer ul.social-media li a {
+    font-size: 30px;
+}
+#copyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #282828;
+}
+#copyright a {
+    color: #ff7f00;
+}
+.top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 50%;
+    z-index: 98;
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    background: #282828;
+    color: #ffffff;
+    line-height: 35px;
+    opacity: 0;
+    cursor:pointer;
+    border: 1px solid #ffffff;
+}
+.top span {
+    color: #ffffff;
+}
+.top.show {
+    transition: all 0.25s ease-in-out;
+    opacity: 1;
+}
+.wrapper-404 {
+    margin-top: 150px;
+}
+.wrapper-404 h1, .page-id-199 h1 {
+    color: #000000;
+    text-shadow: none;
+    margin-bottom: 20px;
+}
+.page-id-199 .wrapper {
+    margin-top: 150px;
+}
+.wsp-container ul {
+    margin-bottom: 35px;
+}
+.wsp-container ul li {
+    padding-left: 20px;
+    position: relative;
+}
+.wsp-container ul li:before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+}
+.wsp-container ul li a {
+    color: #000000;
+}
+.sitemap {
+    font-size: 12px;
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+.sitemap:hover {
+    text-decoration: underline;
+}
+.wrapper-404 #header, .page-id-199 #header {
+    background-color: #e4e4e4;
+}
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .home-cta {
+        height: 600px;
+    }
+    .story-tile .title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .intro-section p {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    .inside-banner-wrapper {
+        height: 600px;
+    }
+    .cta-wrapper .title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .wedding-package-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .wedding-package-wrapper, .engagement-package-wrapper {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    #header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label {
+        color: #000000;
+    }
+    #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1::after {
+        color: #000000;
+    }
+    #lg-menu-wrapper {
+        z-index: 98;
+        width: 100%;
+        transform: none;
+        -webkit-transform: none;
+        top: 0;
+        margin-top: 30px;
+    }
+    .navbar-brand {
+        position: relative;
+        z-index: 99;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary {
+        margin-top: 30px;
+        background-color: #282828;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+        color: #ffffff;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item:hover {
+        background-color: #e4e4e4;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu {
+        margin-top: 0;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
+        color: #cdaf97;
+    }
+    .wedding-package-wrapper, .engagement-package-wrapper {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .about-images-row .vc_column_container > .vc_column-inner {
+        padding: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .home-cta {
+        height: 500px;
+    }
+    .inside-banner-wrapper {
+        height: 500px;
+    }
+    .story-tile:nth-child(1), .story-tile:nth-child(1) {
+        margin-bottom: 15px;
+    }
+    .intro-section p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    ul.instagram-pics li {
+        width: 25%;
+    }
+    .page-title h1 {
+        bottom: 40px;
+    }
+    .intro-section {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .home h1 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    .intro-section p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .portrait-wrapper {
+        margin-top: 15px;
+    }
+    .social-media-col {
+        margin-top: 20px;
+    }
+    #footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #copyright span {
+        display: block;
+        margin: 5px 0;
+    }
+    #copyright i {
+        display: none;
+    }
+    .navbar-brand {
+        height: 80px;
+    }
+    #header {
+        height: 80px;
+    }
+    .home-cta:first-child h2 {
+        margin-top: 80px;
+    }
+    .wedding-package-wrapper, .engagement-package-wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .wedding-package-wrapper .vc_column_container.image-wrapper, .engagement-package-wrapper .vc_column_container.image-wrapper {
+        border: 0;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary {
+        margin-top: 15px;
+    }
+    #lg-menu-wrapper {
+        margin-top: 25px;
+    }
+    .wedding-package-wrapper .vc_column_container.package-wrapper, .engagement-package-wrapper .vc_column_container.package-wrapper {
+        border: 0;
+    }
+    .wedding-package-wrapper .vc_column_container, .engagement-package-wrapper .vc_column_container {
+        padding-top: 0;
+    }
+    .vc_column_container.image-wrapper {
+        padding-top: 20px;
+    }
+    .spacer {
+        height: 5px !important;
+    }
+    #instagram-feed {
+        margin-top: 30px;
+    }
+    .page-navigation-section a.next {
+        right: 15px;
+    }
+    .page-navigation-section a.prev {
+        left: 15px;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+        font-size: 16px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .home-cta {
+        height: 400px;
+    }
+    .home-cta h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .story-tile:nth-child(1), .story-tile:nth-child(1) {
+        margin-bottom: 15px;
+    }
+    .story-tile .title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    ul.instagram-pics li {
+        width: 25%;
+    }
+    .inside-banner-wrapper {
+        height: 300px;
+    }
+    .page-title h1 {
+        bottom: 15px;
+    }
+    .page-intro {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .cta-wrapper .title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .home-cta {
+        height: 400px;
+    }
+    .home-cta h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .story-tile {
+        margin-bottom: 5px;
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+    }
+    .story-tile:last-child {
+        margin-bottom: 0;
+    }
+    ul.instagram-pics li {
+        width: 25%;
+    }
+    .inside-banner-wrapper {
+        height: 200px;
+        margin-top: 80px;
+    }
+    .page-title h1 {
+        bottom: 15px;
+    }
+    .page-intro {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .cta-wrapper .title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .m-nopadding {
+        padding: 0;
+    }
+    .page-intro p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .gallery-menu-col {
+        margin-top: 20px;
+    }
+    .story-tile .title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .stories-wrapper {
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+    }
+    #full-width-banner-page .story-tile {
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 399px) {
+    .story-tile .title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .story-tile .title {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
